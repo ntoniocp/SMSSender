@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Sender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="messaging.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1>Envio de mensajes de texto a traves de la Web</h1>
+        <p>
+            Con este cliente puedes enviar mensajes de texto a cualquier pais, siempre y cuando el numero ingresado se encuentre dentro de la lista blanca del administrador
+        </p>
+        
+        <label>Numero de telefono</label>
+        <input id="phoneNumber" type="text" placeholder="Numero del destinatario">
+        
+        <label>Mensaje (Maximo 67 caracteres)</label>
+        <textarea id="message" cols="30" rows="10" placeholder="Tu mensaje va aqui"></textarea>
+
+        <button id="sendMessageBtn">Enviar mensaje</button>
+    </div>
+</body>
+</html>
