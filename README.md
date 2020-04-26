@@ -12,3 +12,5 @@ Run the server
 
 ## How to test it
 There´s an small client for sending messages at root route just open the browser and go to http://localhost:PORT/
+
+![Client Screenshot](client_screenshot.png)
