@@ -10,18 +10,24 @@
 </head>
 <body>
     <div class="card">
-        <h1>Envio de mensajes de texto a traves de la Web</h1>
+        <h1>
+            SMS SENDER
+        </h1>
         <p>
-            Con este cliente puedes enviar mensajes de texto a cualquier pais, siempre y cuando el numero ingresado se encuentre dentro de la lista blanca del administrador
+            With this web client you cand send text messages to any number. In case you're testing this with a free trial Nexmo account, you will need to register the phone numbers into a whitelist at nexmo website.
         </p>
         
-        <label>Numero de telefono</label>
-        <input id="phoneNumber" type="text" placeholder="Numero del destinatario">
+        <label>Phone number</label>
+        <input id="phoneNumber" type="text" placeholder="+58 000 1122334">
         
-        <label>Mensaje (Maximo 67 caracteres)</label>
-        <textarea id="message" cols="30" rows="10" placeholder="Tu mensaje va aqui"></textarea>
+        <label>Message (67 characters max)</label>
+        <textarea id="message" cols="30" rows="5" placeholder="Your message goes here" maxlength="67"></textarea>
 
-        <button id="sendMessageBtn">Enviar mensaje</button>
+        <button id="sendMessageBtn">Send message</button>
+    
+        <p style="text-align: center;">
+            Check this project on <a href="https://github.com/ntoniocp/SMSSender">Github</a>
+        </p>
     </div>
 </body>
 </html>

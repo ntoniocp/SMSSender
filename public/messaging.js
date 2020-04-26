@@ -1,18 +1,17 @@
-const phoneNumber = document.querySelector('#phoneNumber');
+/*const phoneNumber = document.querySelector('#phoneNumber');
 const message = document.querySelector('#message');
 const sendBtn = document.querySelector('#sendMessageBtn');
 
 sendBtn.addEventListener('click', sendMessage);
-
+*/
 function sendMessage(event) {
     if (phoneNumber.value && message.value) {
         const url = '/sms';
         const data = {
-            phone : phoneNumber.value,
+            phone : onlyNumbers(phoneNumber.value),
             message: message.value  
         };
 
-        console.log(data);
         const requestOptions =  {
             method: 'POST', 
             body: JSON.stringify(data),
@@ -28,3 +27,6 @@ function sendMessage(event) {
     }
 }
 
+function onlyNumbers(string) {
+    return string.replace(/\D/g,''); 
+}
