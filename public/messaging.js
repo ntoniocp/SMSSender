@@ -1,9 +1,9 @@
-/*const phoneNumber = document.querySelector('#phoneNumber');
+const phoneNumber = document.querySelector('#phoneNumber');
 const message = document.querySelector('#message');
 const sendBtn = document.querySelector('#sendMessageBtn');
 
 sendBtn.addEventListener('click', sendMessage);
-*/
+
 function sendMessage(event) {
     if (phoneNumber.value && message.value) {
         const url = '/sms';
