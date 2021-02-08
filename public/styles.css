@@ -1,104 +1,107 @@
 :root {
-    --primaryColor: #ebf5fc;
-    --secondaryColor: #479dff;
-    --fontColor: rgba(255, 255, 255, 0.8);
+  --primaryColor: #ebf5fc;
+  --secondaryColor: #479dff;
+  --fontColor: rgba(255, 255, 255, 0.8);
 }
 
-
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 body {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--primaryColor);
-    color: var(--fontColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primaryColor);
+  color: var(--fontColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.1);
-    color: #ababab;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    max-width: 500px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: #ababab;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 500px;
 }
 
 .card input {
-    padding: .85rem;
-    border-radius: 40px;
+  padding: 0.85rem;
+  border-radius: 40px;
 }
 
 .card textarea {
-    padding: 1rem;
-    border-radius: 20px;
-    resize: none;
+  padding: 1rem;
+  border-radius: 20px;
+  resize: none;
 }
 
 .card input,
 .card textarea {
-    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
-    border: 0 none;
-    background: var(--primaryColor);
-    outline: none;
-    font-family: inherit;
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border: 0 none;
+  background: var(--primaryColor);
+  outline: none;
+  font-family: inherit;
 }
 
 .card h1 {
-    text-align: center;
+  text-align: center;
 }
 
-.card input, 
+.card input,
 .card textarea,
 .card h1,
 .card p {
-    margin: 15px 0;
-    width: 100%;
+  margin: 15px 0;
+  width: 100%;
 }
 
 .card button {
-    width: 100%;
-    text-transform: uppercase;
-    border-radius: 40px;
-    border: none;
-    background: var(--primaryColor);
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.1);
-    height: 40px;
-    outline: none;
-    cursor: pointer;
-    color: inherit;
-    font-family: inherit;
-    letter-spacing: 1px;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 40px;
+  border: none;
+  background: var(--primaryColor);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: 1px;
 }
 
 .card button:active {
-    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
-    color: var(--secondaryColor);
-    background: var(--primaryColor);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  color: var(--secondaryColor);
+  background: var(--primaryColor);
 }
 
 .card p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .card p:last-of-type {
-    text-align: center;
-    margin-top: 35px !important;
-    margin-bottom: 0;
+  text-align: center;
+  margin-top: 35px !important;
+  margin-bottom: 0;
 }
 
 .card p a {
-    color: var(--secondaryColor);
-    cursor: pointer;
-    text-decoration: none;
+  color: var(--secondaryColor);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .card p a:hover {
-    text-decoration:underline;
+  text-decoration: underline;
 }

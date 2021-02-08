@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMS Sender</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="messaging.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="card">
-        <h1>
-            SMS SENDER
-        </h1>
-        <p>
-            With this web client you cand send text messages to any number. In case you're testing this with a free trial Nexmo account, you will need to register the phone numbers into a whitelist at nexmo website.
-        </p>
-        
-        <label>Phone number</label>
-        <input id="phoneNumber" type="text" placeholder="+58 000 1122334">
-        
-        <label>Message (67 characters max)</label>
-        <textarea id="message" cols="30" rows="5" placeholder="Your message goes here" maxlength="67"></textarea>
+      <h1>SMS SENDER</h1>
+      <p>
+        With this web client you cand send text messages to any number. In case
+        you're testing this with a free trial Nexmo account, you will need to
+        register the phone numbers into a whitelist at nexmo website.
+      </p>
 
-        <button id="sendMessageBtn">Send message</button>
-    
-        <p style="text-align: center;">
-            Check this project on <a href="https://github.com/ntoniocp/SMSSender">Github</a>
-        </p>
+      <label>Phone number</label>
+      <input id="phoneNumber" type="text" placeholder="+58 000 1122334" />
+
+      <label>Message (67 characters max)</label>
+      <textarea
+        id="message"
+        cols="30"
+        rows="5"
+        placeholder="Your message goes here"
+        maxlength="67"
+      ></textarea>
+
+      <button id="sendMessageBtn">Send message</button>
+
+      <p style="text-align: center">
+        Check this project on
+        <a href="https://github.com/ntoniocp/SMSSender">Github</a>
+      </p>
     </div>
-</body>
+  </body>
 </html>
